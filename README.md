@@ -1,6 +1,3 @@
-# php-password-manager-api-indonesia
-Backend RESTful API aman berbasis PHP untuk menyimpan kredensial yang terenkripsi. Dirancang untuk menjadi core layanan bagi aplikasi password manager self-hosted Anda. Persyaratan: PHP 8.x, Composer, dan DB MySQL.
-
 # 🔑 PHP Password Manager API
 
 ![Badge Bahasa: PHP](https://img.shields.io/badge/Language-PHP-777BB4?style=for-the-badge&logo=php)

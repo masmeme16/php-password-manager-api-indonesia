@@ -1,0 +1,60 @@
+### Register User Baru
+POST http://localhost:999/api/auth/register.php
+Content-Type: application/json
+
+{
+    "name": "Budi Santoso",
+    "email": "budi@contoh.com",
+    "password": "kata_sandi_rahasia123"
+}
+
+### Login User
+POST http://localhost:999/api/auth/login.php
+Content-Type: application/json
+
+{
+    "email": "budi@contoh.com",
+    "password": "kata_sandi_rahasia123"
+}
+
+
+### Buat Entri Vault Baru
+POST http://localhost:999/api/vault/create.php
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "title": "Akun Google",
+    "username": "budi.santoso@gmail.com",
+    "password_encrypted": "dGVzdCBlbmNyaXB0ZWQgYWRhLXZhbHVl",
+    "url": "https://mail.google.com",
+    "notes": "Ini adalah akun email pribadi saya."
+}
+
+### Baca Vault
+GET http://localhost:999/api/vault/read.php?user_id=1
+Content-Type: application/json
+
+
+### Update Entri Vault (ID 1)
+PUT http://localhost:999/api/vault/update.php
+Content-Type: application/json
+
+{
+    "id": 1, 
+    "user_id": 1, 
+    "title": "Akun Google [BARU]",
+    "username": "budi.santoso@gmail.com",
+    "password_encrypted": "ZGF0YSBlbmNyaXBzaSBiYXJ1",
+    "url": "https://www.google.com",
+    "notes": "Catatan baru setelah update."
+}
+
+### Hapus Entri Vault (ID 1)
+DELETE http://localhost:999/api/vault/delete.php
+Content-Type: application/json
+
+{
+    "id": 1, 
+    "user_id": 1
+}

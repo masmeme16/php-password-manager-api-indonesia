@@ -55,6 +55,6 @@ DELETE http://localhost:999/api/vault/delete.php
 Content-Type: application/json
 
 {
-    "id": 1, 
+    "id": 3, 
     "user_id": 1
 }
